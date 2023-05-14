@@ -10,7 +10,7 @@ The file `ChestUCI_23102018.epd` contains 6566 mate problems, ranging from mate 
 * 866 positions have 7 pieces or fewer.
 * Of these 7men positions, 9 are not scored by cdb because they allow castling.
 
-As cdb currently does not store mate scores for 7men EGTB positions, the theoretically maximal number of (best) mates it can find is 5695. Recent SF versions find about 2450 best mates with 1M nodes per position, see [matetrack](https://github.com/vondele/matetrack).
+As cdb currently does not store mate scores for 7men EGTB positions, the theoretically maximal number of (best) mates it can find within this test suit is 5695. Recent SF versions find about 2450 best mates with 1M nodes per position, see [matetrack](https://github.com/vondele/matetrack).
 
 ---
 
