@@ -22,7 +22,7 @@ class matedata:
                     self.date.append(datetime.fromisoformat(parts[0]))
                     self.mates.append(int(parts[2]))
                     self.bmates.append(int(parts[3]))
-                    self.wins.append(int(parts[2]) + int(parts[3]) + int(parts[4]))
+                    self.wins.append(int(parts[2]) + int(parts[4]))
                     self.connected.append(int(parts[5]))
 
     def showdata(self):
