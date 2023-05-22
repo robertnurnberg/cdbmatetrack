@@ -62,10 +62,15 @@ class matedata:
         if plotAll and self.connected[-1]:
             ax2 = ax1.twinx()
             ax2.set_ylabel("connected to root", color=connectedColor)
-            ax2.scatter(
-                self.date, self.connected, color=connectedColor, s=0.5 * dotSize
+            ax2.scatter(self.date, self.connected, color=connectedColor, s=dotSize / 4)
+            ax2.plot(
+                self.date,
+                self.connected,
+                color=connectedColor,
+                linewidth=lineWidth / 2,
             )
             ax2.tick_params(axis="y", labelcolor=connectedColor)
+            ax2.set_ylim([0, max(self.connected) + 1])
             ax2.yaxis.set_major_locator(MaxNLocator(integer=True))
 
         plt.savefig(self.prefix + ("all" if plotAll else "") + ".png", dpi=300)
