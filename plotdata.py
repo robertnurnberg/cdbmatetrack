@@ -70,7 +70,7 @@ class matedata:
                 linewidth=lineWidth / 2,
             )
             ax2.tick_params(axis="y", labelcolor=connectedColor)
-            ax2.set_ylim([0, max(self.connected) + 1])
+            ax2.set_ylim([0, max(self.connected) * 1.1])
             ax2.yaxis.set_major_locator(MaxNLocator(integer=True))
 
         plt.savefig(self.prefix + ("all" if plotAll else "") + ".png", dpi=300)
