@@ -12,12 +12,17 @@ parser.add_argument(
 )
 parser.add_argument("--debug", action="store_true")
 parser.add_argument("--mateFile", help="output file for found mates", default=None)
+parser.add_argument(
+    "--nonmateFile",
+    help="output file for non-mates with more than 7 pieces",
+    default=None,
+)
 args = parser.parse_args()
 
 mtime = os.path.getmtime(args.filename)
 mtime = datetime.datetime.fromtimestamp(mtime).isoformat()
-npos, mates, correctMates, TBwins, connected = 0, 0, 0, 0, 0
-mateLines = []
+npos, mates, bestMates, TBwins, connected = 0, 0, 0, 0, 0
+mateLines, nonmateLines = [], []
 with open(args.filename) as f:
     for line in f:
         line = line.strip()
@@ -34,19 +39,23 @@ with open(args.filename) as f:
                 cdb, _, _ = cdb.partition(", ply: ")
             else:
                 cdb, _, _ = cdb.partition(";")
-            if cdb.isnumeric():
+            if cdb.lstrip("-").isnumeric():
                 if abs(int(cdb)) >= 20000:
                     TBwins += 1
+                if args.nonmateFile:
+                    pc = sum(p in "pnbrqk" for p in fen.lower().split()[0])
+                    if pc >= 8:  # no chance to 7men positions anyway
+                        nonmateLines.append(line + "\n")
             elif cdb.startswith("M"):
                 mates += 1
                 if 2 * bm - 1 == int(cdb[1:]):
-                    correctMates += 1
+                    bestMates += 1
                 if args.mateFile:
                     mateLines.append(epd + f" cdb: #{(int(cdb[1:])+1)//2}\n")
             elif cdb.startswith("-M"):
                 mates += 1
                 if 2 * bm == -int(cdb[2:]):
-                    correctMates += 1
+                    bestMates += 1
                 if args.mateFile:
                     mateLines.append(epd + f" cdb: #-{int(cdb[2:])//2}\n")
             npos += 1
@@ -57,17 +66,22 @@ with open(args.filename) as f:
                 print("bm:", bm)
                 print("cdb:", cdb)
                 print(
-                    "mates, correctMates, TBwins, connected:",
+                    "mates, bestMates, TBwins, connected:",
                     mates,
-                    correctMates,
+                    bestMates,
                     TBwins,
                     connected,
                 )
                 _ = input("")
 
-print(f"{mtime},{npos},{mates},{correctMates},{TBwins},{connected}")
+print(f"{mtime},{npos},{mates},{bestMates},{TBwins},{connected}")
 
 if args.mateFile:
     with open(args.mateFile, "w") as f:
         for line in mateLines:
+            f.write(line)
+
+if args.nonmateFile:
+    with open(args.nonmateFile, "w") as f:
+        for line in nonmateLines:
             f.write(line)
