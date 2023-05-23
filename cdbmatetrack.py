@@ -11,11 +11,13 @@ parser.add_argument(
     default="ChestUCI_23102018_cdbeval.epd",
 )
 parser.add_argument("--debug", action="store_true")
+parser.add_argument("--mateFile", help="output file for found mates", default=None)
 args = parser.parse_args()
 
 mtime = os.path.getmtime(args.filename)
 mtime = datetime.datetime.fromtimestamp(mtime).isoformat()
 npos, mates, correctMates, TBwins, connected = 0, 0, 0, 0, 0
+mateLines = []
 with open(args.filename) as f:
     for line in f:
         line = line.strip()
@@ -26,7 +28,7 @@ with open(args.filename) as f:
             _, _, bm = line.partition(" bm #")
             bm, _, _ = bm.partition(";")
             bm = int(bm)
-            _, _, cdb = line.partition(" cdb eval: ")
+            epd, _, cdb = line.partition(" cdb eval: ")
             if "ply" in cdb:
                 connected += 1
                 cdb, _, _ = cdb.partition(", ply: ")
@@ -39,10 +41,14 @@ with open(args.filename) as f:
                 mates += 1
                 if 2 * bm - 1 == int(cdb[1:]):
                     correctMates += 1
+                if args.mateFile:
+                    mateLines.append(epd + f" cdb: #{(int(cdb[1:])+1)//2}\n")
             elif cdb.startswith("-M"):
                 mates += 1
                 if 2 * bm == -int(cdb[2:]):
                     correctMates += 1
+                if args.mateFile:
+                    mateLines.append(epd + f" cdb: #-{int(cdb[2:])//2}\n")
             npos += 1
 
             if args.debug:
@@ -60,3 +66,8 @@ with open(args.filename) as f:
                 _ = input("")
 
 print(f"{mtime},{npos},{mates},{correctMates},{TBwins},{connected}")
+
+if args.mateFile:
+    with open(args.mateFile, "w") as f:
+        for line in mateLines:
+            f.write(line)
