@@ -45,19 +45,26 @@ with open(args.filename) as f:
                 if args.nonmateFile:
                     pc = sum(p in "pnbrqk" for p in fen.lower().split()[0])
                     if pc >= 8:  # no chance to 7men positions anyway
-                        nonmateLines.append(line + "\n")
+                        nonmateLines.append((abs(int(cdb)), line + "\n"))
             elif cdb.startswith("M"):
                 mates += 1
                 if 2 * bm - 1 == int(cdb[1:]):
                     bestMates += 1
                 if args.mateFile:
-                    mateLines.append(epd + f" cdb: #{(int(cdb[1:])+1)//2}\n")
+                    mateLines.append(
+                        (
+                            int(cdb[1:]) - (2 * bm - 1),
+                            epd + f" cdb: #{(int(cdb[1:])+1)//2}\n",
+                        )
+                    )
             elif cdb.startswith("-M"):
                 mates += 1
                 if 2 * bm == -int(cdb[2:]):
                     bestMates += 1
                 if args.mateFile:
-                    mateLines.append(epd + f" cdb: #-{int(cdb[2:])//2}\n")
+                    mateLines.append(
+                        (2 * bm + int(cdb[2:]), epd + f" cdb: #-{int(cdb[2:])//2}\n")
+                    )
             npos += 1
 
             if args.debug:
@@ -77,11 +84,13 @@ with open(args.filename) as f:
 print(f"{mtime},{npos},{mates},{bestMates},{TBwins},{connected}")
 
 if args.mateFile:
+    mateLines.sort(key=lambda t: t[0])  # guarantee stable sort
     with open(args.mateFile, "w") as f:
-        for line in mateLines:
+        for _, line in mateLines:
             f.write(line)
 
 if args.nonmateFile:
+    nonmateLines.sort(key=lambda t: t[0])  # guarantee stable sort
     with open(args.nonmateFile, "w") as f:
-        for line in nonmateLines:
+        for _, line in nonmateLines:
             f.write(line)
