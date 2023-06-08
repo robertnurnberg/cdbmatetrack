@@ -8,7 +8,7 @@ parser.add_argument(
     "filename",
     nargs="?",
     help="file with scored FENs",
-    default="ChestUCI_23102018_cdbeval.epd",
+    default="matetrack_cdbeval.epd",
 )
 parser.add_argument("--debug", action="store_true")
 parser.add_argument("--mateFile", help="output file for found mates", default=None)
