@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 ../cdblib/fens2cdb.py matetrack.epd > matetrack_cdbeval.epd
+python3 ../cdblib/fens2cdb.py --user rob matetrack.epd > matetrack_cdbeval.epd
 python3 cdbmatetrack.py --mateFile matetrack_cdbmates.epd --nonmateFile matetrack_cdbnonmates.epd >> cdbmatetrack.csv
 python3 plotdata.py
 
