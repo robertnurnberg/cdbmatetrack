@@ -44,7 +44,7 @@ with open(args.filename) as f:
                     TBwins += 1
                 if args.nonmateFile:
                     pc = sum(p in "pnbrqk" for p in fen.lower().split()[0])
-                    if pc >= 8:  # no chance to 7men positions anyway
+                    if pc >= 8:  # no chance in 7men positions anyway
                         nonmateLines.append((abs(int(cdb)), line + "\n"))
             elif cdb.startswith("M"):
                 mates += 1

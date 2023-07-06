@@ -1,3 +1,4 @@
+import argparse
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from datetime import datetime
@@ -5,8 +6,9 @@ from matplotlib.ticker import MaxNLocator
 
 
 class matedata:
-    def __init__(self, prefix):
+    def __init__(self, prefix, egtb=None, wcr=None):
         self.prefix = prefix
+        self.egtb, self.wcr = egtb, wcr
         self.date = []  # datetime entries
         self.mates = []  # mates
         self.bmates = []  # best mates
@@ -20,6 +22,7 @@ class matedata:
                 if line:
                     parts = line.split(",")
                     self.date.append(datetime.fromisoformat(parts[0]))
+                    self.total = int(parts[1])
                     self.mates.append(int(parts[2]))
                     self.bmates.append(int(parts[3]))
                     self.wins.append(int(parts[2]) + int(parts[4]))
@@ -48,6 +51,15 @@ class matedata:
                 self.date, self.wins, label="TBwins+mates", color=winColor, s=dotSize
             )
             ax1.plot(self.date, self.wins, color=winColor, linewidth=lineWidth)
+            maxPossible = self.total - self.wcr
+        else:
+            maxPossible = self.total - self.egtb
+        if max(self.mates) > 0.8 * maxPossible:
+            ax1.axhline(
+                maxPossible, color=yColor, linestyle="dashed", linewidth=lineWidth / 2
+            )
+            yt = list(ax1.get_yticks())
+            ax1.set_yticks([t for t in yt if t < maxPossible] + [maxPossible])
         ax1.set_ylabel("# of positions", color=yColor)
         ax1.tick_params(axis="y", labelcolor=yColor)
         ax1.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
@@ -77,6 +89,23 @@ class matedata:
 
 
 if __name__ == "__main__":
-    data = matedata("cdbmatetrack")
+    parser = argparse.ArgumentParser(
+        description="Plot data stored in e.g. cdbmatetrack.csv.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    parser.add_argument(
+        "filename",
+        nargs="?",
+        help="file with statistics over time",
+        default="cdbmatetrack.csv",
+    )
+    parser.add_argument("--egtb", help="number of EGTB positions", default=866)
+    parser.add_argument(
+        "--wcr", help="number of EGTB positions w/ castling rights", default=9
+    )
+    args = parser.parse_args()
+
+    prefix, _, _ = args.filename.partition(".")
+    data = matedata(prefix, args.egtb, args.wcr)
     data.create_graph(plotAll=False)
     data.create_graph(plotAll=True)
