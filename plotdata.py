@@ -66,6 +66,8 @@ class matedata:
         ax1.tick_params(axis="y", labelcolor=yColor)
         ax1.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
         ax1.legend(loc="upper center", ncol=3, bbox_to_anchor=(0.5, 1.13))
+        if not plotAll:
+            ax1.grid(alpha=0.4, linewidth=0.5)
         plt.setp(
             ax1.get_xticklabels(),
             rotation=45,
