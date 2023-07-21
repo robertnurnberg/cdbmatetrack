@@ -40,31 +40,33 @@ with open(args.filename) as f:
             else:
                 cdb, _, _ = cdb.partition(";")
             if cdb.lstrip("-").isnumeric():
-                if abs(int(cdb)) >= 20000:
+                if abs(int(cdb)) >= 20000 and int(cdb) * bm > 0:
                     TBwins += 1
                 if args.nonmateFile:
                     pc = sum(p in "pnbrqk" for p in fen.lower().split()[0])
                     if pc >= 8:  # no chance in 7men positions anyway
                         nonmateLines.append((abs(int(cdb)), line + "\n"))
             elif cdb.startswith("M"):
-                mates += 1
-                if 2 * bm - 1 == int(cdb[1:]):
-                    bestMates += 1
+                m = int(cdb[1:])
+                if m * bm > 0:
+                    mates += 1
+                    if 2 * bm - 1 == m:
+                        bestMates += 1
                 if args.mateFile:
                     mateLines.append(
                         (
-                            int(cdb[1:]) - (2 * bm - 1),
-                            epd + f" cdb: #{(int(cdb[1:])+1)//2}\n",
+                            m - (2 * bm - 1),
+                            epd + f" cdb: #{(m+1)//2}\n",
                         )
                     )
             elif cdb.startswith("-M"):
-                mates += 1
-                if 2 * bm == -int(cdb[2:]):
-                    bestMates += 1
+                m = -int(cdb[2:])
+                if m * bm > 0:
+                    mates += 1
+                    if 2 * bm == m:
+                        bestMates += 1
                 if args.mateFile:
-                    mateLines.append(
-                        (2 * bm + int(cdb[2:]), epd + f" cdb: #-{int(cdb[2:])//2}\n")
-                    )
+                    mateLines.append((2 * bm - m, epd + f" cdb: #{m//2}\n"))
             npos += 1
 
             if args.debug:
