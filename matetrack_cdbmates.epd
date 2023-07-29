@@ -4969,7 +4969,6 @@ r1b1kb2/3p2p1/p3p3/1p2Pp2/1B1N2p1/PN1P2qr/1P4P1/R2Q1RK1 b q - bm #13; 01:22 @ C0
 8/2p1p3/2P1p3/4Nkp1/2P3Nb/1pp1P1p1/1pr3P1/nB4KR w - - bm #15; 00:00 @ C2/R0/K2/P1/X1; cdb: #17
 8/3p4/2prp3/2pbPp2/2p1pP2/2P1N3/p5R1/rk1K4 w - - bm #15; 00:00 @ C2/R0/K2/P2/X2; cdb: #17
 8/B7/p2p3p/rk1P3K/bp2R2P/1p1p4/1P1P2B1/8 w - - bm #15; 00:00 @ C2/R-3/K2/P1/X1; cdb: #17
-k7/Bp6/1P6/5N2/6pK/1P5p/8/8 w - - bm #15; 00:00 @ C0/R0/K2/P1/X1; cdb: #17
 5kBR/K4P1P/3npP1P/n3p3/4P3/8/8/2B5 w - - bm #15; 00:23 @ C0/R0/K2/P2/X15; cdb: #17
 8/8/2B4p/3RPp1K/5PrP/1p1pB2p/bp1Pp2p/qrn1Rn1k w - - bm #15; SFMF9; cdb: #17
 4k1b1/p1R5/4ppp1/p1B1p3/r1p1N1n1/8/8/1n2K3 w - - bm #16; 00:00 @ C2/R2/K3/P10/X19; cdb: #18
@@ -5104,6 +5103,7 @@ n3k3/3R4/P1pB3K/1p2p3/qnb2pB1/1prp3p/3pr1P1/5R2 w - - bm #12; 03:22 @ C0/R-4/K3/
 2r4r/3Q1bk1/pq4p1/5R2/2p5/2P2P2/PP5P/6RK b - - bm #13; 00:00 @ C0/R3/K5/P4/X15; cdb: #16
 7r/p1p1pp2/8/1B3p2/K1PNp3/1R1b3r/p4p2/k1B5 w - - bm #13; 00:00 @ C2/R3/K2/P9/X37; cdb: #16
 8/3p4/1N1p1p2/K1kP1p2/1N3P2/3p4/3P4/8 w - - bm #13; 00:00 @ C2/R0/K2/P1/X1; cdb: #16
+8/8/8/8/2p1b3/p6p/P5Rr/k3K2R w K - bm #13; 00:00 @ C2/R0/K3/P1/X2; cdb: #16
 n7/2p5/1pP1Kp2/1NkB4/b1P5/P7/5P2/N7 w - - bm #13; 00:01 @ C0/R0/K1/P2/X9; cdb: #16
 7k/6pP/6K1/1Pb5/1p3B2/1P3P2/8/8 w - - bm #13; 00:01+ @ C2/R0/K4/P2/X11; cdb: #16
 8/8/p1p3K1/2P5/6p1/5prp/P4pkq/1RB2Rbn w - - bm #13; 00:03 @ C2/R0/K3/P3/X4; cdb: #16
@@ -5450,7 +5450,6 @@ K1k5/Pn3N2/1B1ppN2/2p3pP/1p2P2p/P4P2/3Pb1PP/4r3 w - - bm #8; 00:52; 00:21 @ C0/R
 6B1/p7/4p1p1/B3PkPp/4pPpK/4P1P1/8/8 w - - bm #9; 00:00; cdb: #21
 krb3K1/1p1p4/1P1p1p2/pPpP1P2/P1P5/6p1/6Pb/7N w - - bm #10; 00:01; cdb: #22
 7n/2p2p1p/2p2Rbr/2P3Pk/5Pp1/p1P1K1P1/P2B4/b7 w - - bm #11; 00:00 @ C0/R0/K1/P2/X8; cdb: #23
-8/4p3/4K3/4Np1N/4kB2/8/3Pn1qP/1R6 w - - bm #12; 00:00 @ C0/R-5/K2/P1/X1; cdb: #24
 5R2/2p2R2/2P5/p1P5/2Pp3p/K2P2pp/3P2kp/7b w - - bm #13; 00:00 @ C0/R0/K2/P2/X2; cdb: #25
 8/2p5/2p5/2P5/8/6p1/4K1p1/RB4kb w - - bm #14; 00:00 @ C0/R0/K3/P2/X5; cdb: #26
 2k4n/R6n/2N1b3/3Pp3/2p5/B1p2pK1/8/Nr6 w - - bm #16; 00:00 @ C0/R1/K3/P7/X30; cdb: #28
