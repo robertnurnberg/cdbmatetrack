@@ -36,7 +36,9 @@ class matedata:
         print("connected: ", self.connected)
 
     def create_graph(self, plotAll=False):
-        dotSize, lineWidth = 20, 0.5
+        dotSize, smallDotSize, lineWidth = 20, 5, 0.5
+        if len(self.date) >= 100:
+            dotSize, smallDotSize = 10, 2
         fig, ax1 = plt.subplots()
         yColor, dateColor, connectedColor = "black", "black", "lightgray"
         bmateColor, mateColor, winColor = "limegreen", "blue", "navy"
@@ -78,7 +80,7 @@ class matedata:
         if plotAll and self.connected[-1]:
             ax2 = ax1.twinx()
             ax2.set_ylabel("connected to root", color=connectedColor)
-            ax2.scatter(self.date, self.connected, color=connectedColor, s=dotSize / 4)
+            ax2.scatter(self.date, self.connected, color=connectedColor, s=smallDotSize)
             ax2.plot(
                 self.date,
                 self.connected,
@@ -103,7 +105,7 @@ if __name__ == "__main__":
         help="file with statistics over time",
         default="cdbmatetrack.csv",
     )
-    parser.add_argument("--egtb", help="number of EGTB positions", default=866)
+    parser.add_argument("--egtb", help="number of EGTB positions", default=865)
     parser.add_argument(
         "--wcr", help="number of EGTB positions w/ castling rights", default=9
     )
