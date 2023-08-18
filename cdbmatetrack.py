@@ -22,6 +22,7 @@ args = parser.parse_args()
 mtime = os.path.getmtime(args.filename)
 mtime = datetime.datetime.fromtimestamp(mtime).isoformat()
 npos, mates, bestMates, TBwins, connected = 0, 0, 0, 0, 0
+nonmates, normalevals = 0, 0
 mateLines, nonmateLines = [], []
 with open(args.filename) as f:
     for line in f:
@@ -40,18 +41,29 @@ with open(args.filename) as f:
             else:
                 cdb, _, _ = cdb.partition(";")
             if cdb.lstrip("-").isnumeric():
-                if abs(int(cdb)) >= 20000 and int(cdb) * bm > 0:
-                    TBwins += 1
+                if abs(int(cdb)) >= 20000:
+                    if int(cdb) * bm > 0:
+                        TBwins += 1
+                    else:
+                        print(f"Wrong TB signs for {fen}.")
+                else:
+                    pc = sum(p in "pnbrqk" for p in fen.lower().split()[0])
+                    print(line)
+                    _ = input(f"{pc}men")
+                    normalevals += 1
                 if args.nonmateFile:
                     pc = sum(p in "pnbrqk" for p in fen.lower().split()[0])
                     if pc >= 8:  # no chance in 7men positions anyway
                         nonmateLines.append((abs(int(cdb)), line + "\n"))
+                        nonmates += 1
             elif cdb.startswith("M"):
                 m = int(cdb[1:])
                 if m * bm > 0:
                     mates += 1
                     if 2 * bm - 1 == m:
                         bestMates += 1
+                else:
+                    print(f"Wrong mate signs for {fen}.")
                 if args.mateFile:
                     mateLines.append(
                         (
@@ -65,8 +77,12 @@ with open(args.filename) as f:
                     mates += 1
                     if 2 * bm == m:
                         bestMates += 1
+                else:
+                    print(f"Wrong mate signs for {fen}.")
                 if args.mateFile:
                     mateLines.append((2 * bm - m, epd + f" cdb: #{m//2}\n"))
+            else:
+                print(f"Wrong eval type for {fen}.")
             npos += 1
 
             if args.debug:
@@ -83,6 +99,7 @@ with open(args.filename) as f:
                 )
                 _ = input("")
 
+print(f"Nonmates: {nonmates}, normalevals: {normalevals}.")
 print(f"{mtime},{npos},{mates},{bestMates},{TBwins},{connected}")
 
 if args.mateFile:
