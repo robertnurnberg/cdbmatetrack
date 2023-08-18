@@ -20,7 +20,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 mtime = os.path.getmtime(args.filename)
-mtime = datetime.datetime.fromtimestamp(mtime).isoformat()
+mtime = datetime.datetime.fromtimestamp(mtime).isoformat(timespec="seconds")
 npos, mates, bestMates, TBwins, connected = 0, 0, 0, 0, 0
 mateLines, nonmateLines = [], []
 with open(args.filename) as f:
