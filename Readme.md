@@ -3,7 +3,9 @@
 Track the number of mates from `matetrack.epd` of Joost VandeVondele' [matetrack](https://github.com/vondele/matetrack)
 that are scored correctly on [chessdb.cn](https://chessdb.cn/queryc_en/) (cdb), the largest online database of chess positions and openings.
 
-The file [`matetrack_cdbeval.epd`](matetrack_cdbeval.epd) is periodically created with the help of the script `fens2cdb.py` from [cdblib](https://github.com/robertnurnberg/cdblib), and the obtained statistics are written to [`cdbmatetrack.csv`](cdbmatetrack.csv).
+The files [`matetrack_cdbeval.epd`](matetrack_cdbeval.epd)
+and [`matetrack_cdbpv.epd`](matetrack_cdbpv.epd) are created daily with
+the help of the scripts `fens2cdb.py` and `cdbbulkpv.py` from [cdblib](https://github.com/robertnurnberg/cdblib), respectively, and the obtained mate statistics are written to [`cdbmatetrack.csv`](cdbmatetrack.csv).
 
 The file [`matetrack.epd`](matetrack.epd) contains 6560 mate problems, ranging from mate in 1 (#1) to #126 for positions with between 4 and 32 pieces. Moreover:
 * 865 positions have 7 pieces or fewer.
