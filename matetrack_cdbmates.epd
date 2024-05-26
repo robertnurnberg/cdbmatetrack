@@ -176,7 +176,6 @@ r3k3/2Qp3R/1p6/1b2K3/4p3/8/5p2/8 w q - bm #4; 00:00; cdb: #4
 7R/8/4Qp2/1p2b3/3rkp2/6P1/1P2P3/5RK1 w - - bm #5; 00:00; cdb: #5
 8/1Kp1pN1r/2P5/Bp6/8/kBN5/1pPR4/1r3qb1 w - - bm #5; 00:00; cdb: #5
 8/1Kp4p/1pP1p3/1k1p4/1P1P1Rpp/pPP5/P7/8 w - - bm #5; 00:00; cdb: #5
-8/1N6/8/4k1P1/6PR/3K3N/B7/8 w - - bm #5; 00:00; cdb: #5
 8/1p2p3/1P2K2B/1P6/3k4/3B2P1/1P2P3/8 w - - bm #5; 00:00; cdb: #5
 8/1p3p1p/kB4p1/P4N2/3N2B1/1K2p2Q/4pr2/3n1q2 w - - bm #5; 00:00; cdb: #5
 8/1P6/p3p3/Pp3P1p/pP2R3/kp6/1p6/1B4K1 w - - bm #5; 00:00; cdb: #5
@@ -215,6 +214,7 @@ r3k3/2Qp3R/1p6/1b2K3/4p3/8/5p2/8 w q - bm #4; 00:00; cdb: #4
 8/B1RN3K/3p1p2/3k1P1P/3q4/3P1Np1/6P1/8 w - - bm #5; 00:00; cdb: #5
 8/K2N2N1/pp1p1P1p/4P1b1/1QP1pk2/1nr2PR1/2r4P/3q1BB1 w - - bm #5; 00:00; cdb: #5
 8/KBp1R3/8/1p6/1P6/N1Pk4/7r/1N6 w - - bm #5; 00:00; cdb: #5
+8/p7/N7/1P6/2k5/2N1K3/P2P4/8 w - - bm #5; 00:00; cdb: #5
 8/pR1r2b1/q1ppbB2/Pp1k4/8/2P5/1K1NNP1r/8 w - - bm #5; 00:00; cdb: #5
 8/QBn5/R1p1rP2/bnPp4/3pNP2/3PkpP1/8/3R1K2 w - - bm #5; 00:00; cdb: #5
 B1n1rb2/2Q5/5B2/1p5p/5pp1/2p1k3/n3bN2/4K3 w - - bm #5; 00:00; cdb: #5
@@ -758,6 +758,7 @@ rnb2k1r/1q1P2p1/p3p1Q1/6Np/2p2B2/8/1P4PP/R3KB1n b Q - bm #-6; Defence; 00:03; cd
 6KR/7P/8/4P3/8/6p1/6pk/6Nb w - - bm #7; 00:00; cdb: #7
 6N1/1nppR1p1/N2k4/1p1Pp1p1/4P3/3p4/pr6/Kbb1B3 w - - bm #7; 00:00; cdb: #7
 6n1/3ppr2/b7/3p1p1Q/3P1k1P/1P2pPpK/r1p5/1N1N1n2 w - - bm #7; 00:00; cdb: #7
+6N1/4p1p1/6k1/6N1/4p1K1/5P2/5P2/8 w - - bm #7; 00:00; cdb: #7
 6N1/6K1/8/4p1k1/1p2P3/1p4PP/1P6/8 w - - bm #7; 00:00; cdb: #7
 6NB/8/8/8/8/NKn1p3/p3P2P/k1r5 w - - bm #7; 00:00; cdb: #7
 6q1/1p6/8/bp1N4/kp6/7p/1PP2B2/K7 w - - bm #7; 00:00; cdb: #7
@@ -871,7 +872,6 @@ rnb2k1r/1q1P2p1/p3p1Q1/6Np/2p2B2/8/1P4PP/R3KB1n b Q - bm #-6; Defence; 00:03; cd
 8/6p1/3p2pk/1p1P1pN1/1P3K2/3p1N1p/3P3P/3B4 w - - bm #7; Duals(3); 00:00; cdb: #7
 8/6p1/3R2p1/6p1/7p/6p1/p3p1N1/3bBk1K w - - bm #7; 00:00; cdb: #7
 8/7B/7p/2p2N2/2P1p1p1/3pP1pk/1P1P4/6K1 w - - bm #7; 00:00; cdb: #7
-8/7B/8/8/5N2/3Np3/2np3K/3n1k2 w - - bm #7; 00:00; cdb: #7
 8/7K/1P6/8/1p6/6pN/1P5p/3B3k w - - bm #7; 00:00; cdb: #7
 8/7k/4Qp1p/6p1/1q6/8/7P/5R1K w - - bm #7; 00:00; cdb: #7
 8/7K/7N/7k/4p3/4p1PB/4P3/8 w - - bm #7; 00:00; cdb: #7
@@ -896,7 +896,6 @@ rnb2k1r/1q1P2p1/p3p1Q1/6Np/2p2B2/8/1P4PP/R3KB1n b Q - bm #-6; Defence; 00:03; cd
 8/8/6K1/5N2/4p1kp/3pP3/3P2P1/6N1 w - - bm #7; 00:00; cdb: #7
 8/8/6p1/6P1/K1p2B2/2p5/2p5/k1N5 w - - bm #7; 00:00; cdb: #7
 8/8/6p1/7N/4p3/4P3/4P3/5KNk w - - bm #7; 00:00; cdb: #7
-8/8/6p1/8/8/p2Q4/P5p1/k5Kb w - - bm #7; 00:00; cdb: #7
 8/8/6pp/3q2pk/4Nnb1/2Q4p/3NnPP1/7K w - - bm #7; 00:00; cdb: #7
 8/8/6Q1/8/8/5kp1/5prp/5Kbb w - - bm #7; 00:00; cdb: #7
 8/8/6r1/5pp1/2N2Ppb/4B1kb/3N2p1/6K1 w - - bm #7; 00:00; cdb: #7
@@ -1392,7 +1391,6 @@ n3b3/2p5/p1p5/k1p5/N7/Kp6/8/R6R w - - bm #7; 00:02; cdb: #7
 n3N3/1B1n2Rp/3K3p/5k2/8/2Pp1pP1/5P1p/4b2r w - - bm #7; 00:02; cdb: #7
 n4K2/6Bp/2P5/1P1k1B2/1PR1NP2/rn1Pp3/2r5/7q w - - bm #7; 00:02; cdb: #7
 n4N2/2p1B1p1/3P4/4k1P1/4P1K1/bNpPp3/2P3B1/3r4 w - - bm #7; 00:02; cdb: #7
-N5N1/8/6pp/7R/7P/7k/7P/7K w - - bm #7; 00:02; cdb: #7
 N6R/rp5q/kp6/1p1p4/1p1p4/1N1P4/1KPP3P/8 w - - bm #7; 00:02; cdb: #7
 n7/5Q2/1p2pbp1/1P3k2/5P2/5K2/8/8 w - - bm #7; 00:02; cdb: #7
 qb3R2/rkn4B/bN1R4/Kp3P2/1B6/6P1/6P1/8 w - - bm #7; 00:02; cdb: #7
@@ -3487,7 +3485,6 @@ nB3N2/4r2B/3b4/1K2n2q/1N1k2p1/3rp3/5R1P/8 w - - bm #10; 00:02; cdb: #10
 1kr2b1r/pp2p3/4N1Q1/8/NnP3pq/1P4n1/5P2/2B1RBK1 w - - bm #10; 00:03; cdb: #10
 4R3/6pk/8/3B2K1/8/1p6/p1bp3p/8 w - - bm #10; 00:03; cdb: #10
 5K1k/5PRP/2pp3q/8/8/3p1p2/p6p/Q4b1r w - - bm #10; 00:03; cdb: #10
-5rk1/3R4/6K1/8/2n5/4B3/p2p4/8 w - - bm #10; 00:03; cdb: #10
 7k/4p2p/5P1B/8/2P5/pK3P2/ppp1p2p/1n3NN1 w - - bm #10; 00:03; cdb: #10
 8/1p6/kPp5/p1P3p1/p3N1p1/K1p2pP1/P1P2P2/3B4 w - - bm #10; 00:03; cdb: #10
 8/7b/6p1/3R4/p7/p7/p1p5/k1K5 w - - bm #10; 00:03; cdb: #10
@@ -3763,7 +3760,6 @@ K3N2k/1n4R1/2n2B1p/1p1b1p2/8/1p3p1r/8/8 w - - bm #10; 02:17; 00:00 @ C4/R4/K3/P8
 8/4R2B/5p1k/5p1p/2b4B/5p1K/pp4P1/8 w - - bm #10; 00:00 @ C2/R1/K3/P7/X23; cdb: #10
 8/5bbr/8/2R3p1/1BPkP3/6PP/3NPK2/8 w - - bm #10; 00:00 @ C0/R1/K3/P4/X19; cdb: #10
 8/5p2/2pK2p1/1bR1Q1R1/1pPpPp2/2pkp3/1r1q1r2/N5N1 w - - bm #10; 00:00 @ C2/R1/K2/P12/X28; cdb: #10
-8/7B/1Np2K2/8/8/8/p1p1N3/rk6 w - - bm #10; 00:00 @ C0/R0/K2/P2/X4; cdb: #10
 8/7n/K1B1p3/4B1b1/2k3N1/pp1NpP1n/1p2P3/8 w - - bm #10; 00:00 @ C0/R-2/K2/P6/X19; cdb: #10
 8/7p/1K1B1p2/p2B3P/1pPk1p1N/r7/2bP4/b1N5 w - - bm #10; 00:00 @ C0/R3/K3/P0/X25; cdb: #10
 8/7p/pB5p/rpr4P/kPR2p1p/2Pp1P1P/1K1P4/8 w - - bm #10; 00:00 @ C0/R3/K2/P2/X12; cdb: #10
@@ -4285,7 +4281,6 @@ b2b2R1/1np1kp1p/1p6/n2K4/p2N2N1/5pP1/P1p3pr/2B2rq1 w - - bm #12; 00:10; cdb: #12
 1n3r1q/2p2P1r/3p4/1K3N2/3b4/5R2/2pP4/1N1k4 w - - bm #12; 00:20; 00:00 @ C2/R1/K2/P4/X22; cdb: #12
 6k1/2p3p1/6PP/1K6/1p1P4/8/3P4/8 w - - bm #12; 00:21; 00:00 @ C0/R0/K5/P2/X6; cdb: #12
 1k6/2p1N3/1p3N2/n7/1P1pB3/1Pr4p/1nP4P/b2br1BK w - - bm #12; 00:22; 00:00 @ C3/R0/K2/P1/X1; cdb: #12
-1R6/k1P3q1/B1K5/1p6/1P6/8/8/8 w - - bm #12; 00:22; 00:00 @ C0/R0/K3/P1/X2; cdb: #12
 8/5P1k/4N1p1/6P1/8/p1p5/PpP5/1K6 w - - bm #12; 00:24; 00:01 @ C6/R0/K5/P1/X4; cdb: #12
 6br/5p1k/5K2/8/8/3p3p/3P2PP/7N w - - bm #12; 00:26; 00:00 @ C2/R0/K2/P3/X3; cdb: #12
 7k/Rp3npP/BKN2qP1/2P5/P1Pn4/8/P2b4/8 w - - bm #12; 00:26; 00:00 @ C0/R-5/K1/P3/X18; cdb: #12
@@ -4502,7 +4497,6 @@ rB1nK3/P2pNp2/N1p1k3/Pp2ppP1/1p2R3/5P2/rq1P4/6bb w - - bm #12; 00:33 @ C0/R4/K3/
 2qk1q2/2pBpP1K/1PP1P3/8/4p1P1/8/3P1P2/5n2 w - - bm #12; 00:53 @ C0/R-9/K4/P5/X29; cdb: #12
 k7/p1pP4/P1P2P1P/3r3r/1P6/pN2p1b1/K4p1p/4BR2 w - - bm #12; 00:54 @ C0/R-6/K2/P8/X37; cdb: #12
 1K6/p1p5/8/8/6p1/6pp/4Nprr/B4Bbk w - - bm #12; Duals(2); 01:04 @ C0/R0/K1/P2/X6; cdb: #12
-2k3r1/2P5/2PP4/3P4/5P2/p1P1P3/PN2K2B/8 w - - bm #12; 01:43 @ C0/R-8/K6/P2/X18; cdb: #12
 b7/4p3/2P5/8/2p1PQ2/3P1B1K/6P1/5qbk w - - bm #12; 02:17 @ C0/R-7/K2/P5/X29; cdb: #12
 8/4K3/2p4p/2p4P/p1P5/kb1R4/1p4P1/bB2B3 w - - bm #12; 02:44 @ C0/R-7/K5/P3/X14; cdb: #12
 n3k3/3R4/P1pB3K/1p2p3/qnb2pB1/1prp3p/3pr1P1/5R2 w - - bm #12; 03:22 @ C0/R-4/K3/P14/X42; cdb: #12
@@ -5114,6 +5108,7 @@ q7/p2N3P/p1n2p2/5p2/3P2p1/b2B4/PP3K1p/3N3k w - - bm #18; 01:17 @ C0/R-9/K1/P6/X2
 n7/b1p4p/1pP4p/1Pp5/1p5P/1P2N1Kp/1P3Rbr/4B1kq w - - bm #18; 02:50 @ C2/R0/K1/P3/X7; 00'12" (Gustav); cdb: #18
 nb1B4/qrrp4/rk1P3K/pP3p2/P1p2P2/P2NP3/2BPRN1P/8 w - - bm #18; --:-- @ C0/R-9/K4/P2/X15; cdb: #18
 6Qb/Pr5P/qP2b3/1R6/8/n6r/k6P/7K w - - bm #18; cdb: #18
+8/1p2p2p/1Pp1p2p/k1P5/3pP3/1P1PP2p/K1P4P/8 w - - bm #18; cdb: #18
 qrb5/bkPp3p/1p1B4/1p1KP3/1P2Pp2/R4P1p/P3pP1P/4N1n1 w - - bm #18; SFMF9; cdb: #18
 8/1p2p3/1P2P3/4p2R/8/4pppK/3prqp1/B2Rbbkn w - - bm #18; cdb: #18
 k7/1pP2r2/1P6/8/8/K5PR/1PPPPP2/8 b - - bm #-18; Defence; 00:00 @ C0/R-2/K1/P1/X14; cdb: #-18
@@ -5447,6 +5442,7 @@ n7/b1p1K3/1pP4p/1P4p1/6p1/1p4Pn/1P2N1br/3NRn1k w - - bm #126; 00:03+ @ C2/R0/K2/
 6b1/4Kpk1/5r2/8/3B2P1/7R/8/8 w - - bm #5; 00:00; cdb: #6
 7B/2N2B2/6Pk/8/6K1/1N6/8/b7 w - - bm #5; 00:00; cdb: #6
 7r/3B4/k7/8/6Qb/8/Kn6/6R1 w - - bm #5; 00:00; cdb: #6
+8/1N6/8/4k1P1/6PR/3K3N/B7/8 w - - bm #5; 00:00; cdb: #6
 2N1n3/7n/5P1k/8/6RK/8/8/5R2 w - - bm #6; 00:01; cdb: #7
 8/8/k7/1p1p4/1K1p4/3p4/3P4/7R w - - bm #7; 00:00; cdb: #8
 k7/P7/P7/P7/P7/P7/2P5/R3K3 w Q - bm #7; Duals(2); 00:00; cdb: #8
@@ -5461,6 +5457,7 @@ k7/1RK3p1/8/8/1p2pP2/2P5/8/5b2 w - - bm #8; 00:04; cdb: #9
 6B1/6P1/6p1/8/6pR/5pP1/5Pp1/4K1kb w - - bm #9; Duals(2); 00:12; cdb: #10
 2B2B2/4p1K1/8/4P2k/b2p4/3P2P1/6P1/8 w - - bm #9; Duals(2); 00:20; 00:04 @ C2/R0/K4/P3/X13; cdb: #10
 7k/5Bn1/5BP1/p1K3P1/8/P7/8/8 w - - bm #9; Duals(2); 00:35; 00:03 @ C0/R-6/K3/P3/X10; cdb: #10
+5rk1/3R4/6K1/8/2n5/4B3/p2p4/8 w - - bm #10; 00:03; cdb: #11
 8/8/8/8/4K2p/3pN2p/3P3p/4B2k w - - bm #10; 00:29; 00:00 @ C2/R0/K3/P1/X2; cdb: #11
 8/8/3pKn2/5N2/4k3/3R4/3pBb2/8 w - - bm #10; 00:00 @ C2/R-3/K5/P3/X15; cdb: #11
 k1N4n/P7/P7/P7/P7/P7/1PK5/8 w - - bm #10; 00:00 @ C2/R0/K5/P1/X8; cdb: #11
@@ -5468,6 +5465,7 @@ k1N4n/P7/P7/P7/P7/P7/1PK5/8 w - - bm #10; 00:00 @ C2/R0/K5/P1/X8; cdb: #11
 5K2/B7/8/8/5P1P/3P1PN1/3RPr1p/4N1kr w - - bm #11; 00:00 @ C0/R0/K1/P1/X9; cdb: #12
 3qk3/8/8/8/8/8/PPPPPPPP/RNBQKBNR w KQ - bm #11; cdb: #12
 6b1/8/8/6K1/7Q/2N5/pppp2N1/2k1Bn2 w - - bm #12; 00:00 @ C2/R3/K3/P4/X18; cdb: #13
+2k3r1/2P5/2PP4/3P4/5P2/p1P1P3/PN2K2B/8 w - - bm #12; 01:43 @ C0/R-8/K6/P2/X18; cdb: #13
 8/B7/P7/8/1p2K3/7p/2PP3p/4b2k w - - bm #15; 00:00 @ C0/R-5/K2/P2/X22; cdb: #16
 1Q1B3k/7p/b4K1p/8/8/8/rP6/6q1 w - - bm #15; 00:06 @ C0/R-4/K5/P4/X34; cdb: #16
 8/p1p1p1p1/5pPk/5P1B/p5P1/2p2pPK/P1P2P2/7N w - - bm #15; 04:01 @ C0/R0/K5/P6/X8; cdb: #16
@@ -5482,7 +5480,6 @@ K7/P2p4/3p4/3p4/Q7/8/pr4p1/k7 w - - bm #22; cdb: #23
 8/kP6/p2P4/K4P1b/8/1Bp3p1/7p/8 w - - bm #24; 00:03 @ C0/R-7/K3/P0/X24; cdb: #25
 3R4/8/8/K7/8/NPp5/p2P4/k1B5 w - - bm #5; 00:00; cdb: #7
 3B3k/5K2/6Pp/7P/4p3/8/1b6/8 w - - bm #7; 00:00; cdb: #9
-6N1/4p1p1/6k1/6N1/4p1K1/5P2/5P2/8 w - - bm #7; 00:00; cdb: #9
 8/6R1/4N3/7k/6p1/p5P1/p7/K7 w - - bm #7; 00:00; cdb: #9
 4N3/8/8/2R1P3/8/2P5/p2K4/Bk6 w - - bm #7; 00:01; cdb: #9
 8/k7/8/8/1RpN4/8/7p/K2n3B w - - bm #7; 00:02; cdb: #9
@@ -5502,7 +5499,7 @@ br6/kNK5/8/8/1Rn5/3q4/8/1R6 w - - bm #12; 00:40; 00:00 @ C2/R0/K2/P1/X1; cdb: #1
 3K4/6pR/6Pb/3p1Pkr/3Pp2p/4P2B/5P2/8 w - - bm #15; cdb: #17
 K7/8/8/8/p7/p4B1p/6np/R5bk w - - bm #17; 01:27+ @ C0/R0/K1/P3/X15; cdb: #19
 8/p7/8/8/8/3p1b2/pp1K1N2/qk6 w - - bm #18; 00:00+ @ C2/R0/K1/P2/X14; cdb: #20
-8/1p2p2p/1Pp1p2p/k1P5/3pP3/1P1PP2p/K1P4P/8 w - - bm #18; cdb: #20
+7b/6kN/6Pp/7P/8/8/K7/1B6 w - - bm #19; 00:00 @ C0/R0/K4/P2/X3; cdb: #21
 8/RB6/8/8/8/5bP1/4Nprp/5Kbk w - - bm #20; --:-- @ C0/R0/K1/P2/X13; cdb: #22
 1k6/1p4p1/1P1K4/8/8/8/6p1/5bR1 w - - bm #21; 04:00+ @ C4/R0/K3/P4/X15; cdb: #23
 2K3bN/6n1/kbQ1p3/p6n/p5p1/8/6p1/8 w - - bm #21; SFMF9; cdb: #23
@@ -5518,51 +5515,54 @@ B5k1/p2p2B1/p5K1/3P4/3P2p1/p2P3p/P2r3p/8 w - - bm #24; cdb: #26
 2k5/b1P1b3/2K5/5P2/2N5/8/1PPP4/8 w - - bm #7; 00:00; cdb: #10
 8/8/8/p7/1p2N3/1b6/p7/k1K1N3 w - - bm #7; 00:00; cdb: #10
 2K1k2N/4p2B/7R/4r2N/8/8/7P/8 w - - bm #8; 00:04; cdb: #11
+k7/P7/P7/P7/P7/P7/8/R3K3 w Q - bm #9; Duals(7); 00:04; cdb: #12
 8/8/4b3/4ppp1/3k4/5P1K/6P1/8 b - - bm #9; 00:20; 00:00 @ C2/R0/K3/P0/X5; cdb: #12
 5N1R/3qrk2/5N2/4bR1p/8/3p4/8/4K3 w - - bm #10; 00:21; 00:05 @ C0/R0/K5/P4/X16; cdb: #13
 8/p1p3p1/2P1Q1p1/8/6rp/p3p2k/P3P1p1/6K1 w - - bm #14; cdb: #17
 B7/2N3r1/8/q6Q/1n6/3rpp2/5PPp/1R2K2k w - - bm #15; --:-- @ C0/R-6/K4/P6/X45; cdb: #18
 8/1p5p/1pp3p1/1k6/1p5p/1P5P/6pP/Q5Kb w - - bm #15; --:-- @ C2/R0/K4/P4/X7; cdb: #18
+k7/Pp6/1Pp5/2Pp4/3Pp3/4P3/5P2/6K1 w - - bm #19; Duals(2); 00:12; cdb: #22
 nkNn4/2pP1p2/1pP1pPp1/pP2P1P1/8/1p6/bP6/2K5 w - - bm #43; cdb: #46
-8/p7/N7/1P6/2k5/2N1K3/P2P4/8 w - - bm #5; 00:00; cdb: #9
 2Q4r/8/8/8/6Rp/6p1/5Npk/4K2b w - - bm #7; 00:00; cdb: #11
 B7/8/8/8/8/2N1p3/2p1p1K1/2B1k3 w - - bm #7; 00:00; cdb: #11
-1K2k3/8/8/P4pp1/3R1Pp1/8/8/8 w - - bm #8; 00:02; cdb: #12
 1qN5/pP6/P7/3N4/3P4/1R6/8/k4K2 w - - bm #11; 0:10 @ C0/R0/K5/P3/X24; cdb: #15
 3q3N/R7/8/8/5K1k/R5n1/5pP1/3N4 w - - bm #12; 00:00 @ C0/R0/K2/P1/X1; cdb: #16
 8/8/6p1/5qR1/4QNp1/5R1p/5Kbk/5B1r w - - bm #12; 00:00 @ C0/R-6/K2/P4/X10; cdb: #16
+8/8/8/8/2p1b3/p6p/P5Rr/k3K2R w K - bm #13; 00:00 @ C2/R0/K3/P1/X2; cdb: #17
 8/8/8/8/5P1B/8/rN1rP2R/3b1k1K w - - bm #13; 00:00 @ C0/R3/K2/P3/X22; cdb: #17
 8/8/B7/7N/8/p7/Pp1p4/1K1k2B1 w - - bm #13; 00:00 @ C0/R0/K2/P2/X8; cdb: #17
-BQ4R1/2Q5/3Q4/4Q1pp/5B1P/6QK/Rrrrrrrq/R4nk1 w - - bm #15; 00:00; cdb: #19
 3q3r/4kp1n/1P2P1pp/Q2Pp3/K3B3/1PP4P/1P2r3/4B3 w - - bm #21; cdb: #25
 8/8/R7/2k1B3/1pP5/1B6/p7/6K1 w - - bm #6; 00:00; cdb: #11
 8/1p6/1p5p/1R5p/7K/8/k7/1N6 w - - bm #7; 00:01; cdb: #12
+N5N1/8/6pp/7R/7P/7k/7P/7K w - - bm #7; 00:02; cdb: #12
+1K2k3/8/8/P4pp1/3R1Pp1/8/8/8 w - - bm #8; 00:02; cdb: #13
 2kb4/2p5/K1Q5/7p/8/8/3p2p1/8 w - - bm #11; 00:16; 00:00 @ C2/R1/K3/P5/X12; cdb: #16
 7k/7p/4B2P/8/8/2n5/1n6/B4K2 w - - bm #11; Duals(2); 01:25; 00:00 @ C4/R0/K1/P2/X15; cdb: #16
 8/8/6k1/1p5p/6p1/P4qP1/1P4RK/8 b - - bm #11; 00:50 @ C0/R0/K3/P0/X16; cdb: #16
-8/1p6/8/1p6/1P2Q3/K1B5/2r1r3/1k6 w - - bm #12; 00:18 @ C0/R0/K4/P4/X23; cdb: #17
 b7/1kp5/2N5/1K1P1B2/5p2/5P1p/7P/8 w - - bm #12; 00:57 @ C2/R0/K0/P2/X8; cdb: #17
 8/N6p/b7/8/2p4p/p1P2Q2/Pp1PP1rp/1Rb1K2k w - - bm #16; cdb: #21
 1Q1rn1rn/2Rb4/3kBb1p/4N1qp/8/7p/7p/7K w - - bm #19; 00:00 @ C2/R0/K2/P1/X1; cdb: #24
-7b/6kN/6Pp/7P/8/8/K7/1B6 w - - bm #19; 00:00 @ C0/R0/K4/P2/X3; cdb: #24
 RN2r2k/6pP/6P1/5K2/8/8/6R1/8 w - - bm #20; --:-- @ C0/R-12/K4/P2/X14; cdb: #25
 2k5/8/1P1P4/8/7p/p1p1p2P/P1P1P2P/b1K5 w - - bm #23; cdb: #28
 8/1p6/8/3p3k/3p4/6Q1/pp1p4/rrbK4 w - - bm #46; Duals(4); 00:12+ @ C2/R0/K5/P3/X6; cdb: #51
+5Q2/5K1B/8/8/8/1p4P1/bp6/k7 w - - bm #7; 00:01; cdb: #13
 8/5K2/5R2/4B1rk/6R1/7P/4b3/8 w - - bm #8; 00:23; 00:00 @ C0/R5/K2/P2/X21; cdb: #14
 N7/8/4B3/3pK2p/7P/6pR/6kN/8 w - - bm #8; 00:23; 00:00 @ C2/R-6/K5/P3/X5; cdb: #14
 K1k5/Pn3N2/1B1ppN2/2p3pP/1p2P2p/P4P2/3Pb1PP/4r3 w - - bm #8; 00:52; 00:21 @ C0/R-6/K3/P9/X29; cdb: #14
-1rB5/8/8/2N5/2p5/2Q1K3/6pp/7k w - - bm #10; 00:29; 00:00 @ C0/R-5/K3/P3/X14; cdb: #16
 4r1k1/5p2/1b3Qp1/5P2/6P1/7K/7P/6r1 b - - bm #10; 00:01 @ C0/R7/K3/P4/X20; cdb: #16
 2N4K/3p3B/2P1kP2/8/8/3n4/8/2N4n w - - bm #10; 00:37 @ C0/R-6/K5/P0/X17; cdb: #16
 3r4/8/B2NK1p1/b1kN2P1/3r4/8/8/8 w - - bm #14; 00:00 @ C2/R6/K3/P1/X2; cdb: #20
 1R6/1P1k4/p7/R7/8/8/3p2K1/2q5 w - - bm #14; 02:47+ @ C0/R-6/K6/P0/X25; cdb: #20
 2K5/2pp3k/8/4p3/8/8/B4q2/3Q4 w - - bm #16; 01:02 @ C4/R-4/K6/P0/X29; cdb: #22
 8/6B1/4B3/8/1B2p3/4p3/4p1pp/2k1Kbrr w - - bm #31; --:-- @ C2/R0/K7/P1/X6; cdb: #37
+1rB5/8/8/2N5/2p5/2Q1K3/6pp/7k w - - bm #10; 00:29; 00:00 @ C0/R-5/K3/P3/X14; cdb: #17
+8/1p6/8/1p6/1P2Q3/K1B5/2r1r3/1k6 w - - bm #12; 00:18 @ C0/R0/K4/P4/X23; cdb: #20
 8/1b6/p1p5/1r6/1B6/1K6/N1N5/1k6 w - - bm #7; 00:00; cdb: #16
 6N1/4bp2/5p1p/5P1k/5P2/5KPP/7P/8 w - - bm #12; 00:05 @ C0/R0/K3/P4/X15; cdb: #21
 7k/1r1p4/5PB1/2pR4/2Ppp3/K1b5/P7/8 w - - bm #18; --:-- @ C0/R-8/K4/P6/X24; cdb: #27
 8/5pk1/p5p1/2Q1p3/1P6/8/P3nqRP/5rRK b - - bm #16; 00:19 @ C0/R-5/K5/P5/X18; cdb: #26
+6b1/pp3pK1/5Bn1/3Nn3/6P1/pp1p1B2/pk1p4/rrb5 w - - bm #21; SFMF9; cdb: #31
 n2Bqk2/5p1p/5KP1/p7/6Q1/8/8/8 w - - bm #13; 00:08 @ C0/R7/K4/P0/X35; cdb: #26
 n2Bqk2/5p1p/Q4KP1/p7/8/8/8/8 w - - bm #13; 00:13 @ C0/R7/K4/P0/X35; cdb: #26
 n2Bqk2/5p1p/5KP1/p7/8/8/2Q5/8 w - - bm #13; 00:14 @ C0/R7/K4/P0/X35; cdb: #26
-8/1p2k3/8/8/5Q2/8/ppp1p3/qrrbK3 w - - bm #50; 00:03+ @ C14/R0/K6/P2/X7; cdb: #1207
+8/1p2k3/8/8/5Q2/8/ppp1p3/qrrbK3 w - - bm #50; 00:03+ @ C14/R0/K6/P2/X7; cdb: #1206
