@@ -61,9 +61,12 @@ class matedata:
                 maxPossible, color=yColor, linestyle="dashed", linewidth=lineWidth / 2
             )
             yt = list(ax1.get_yticks())
+            ytGap = yt[1] - yt[0] if len(yt) > 1 else 0
             if min(self.mates) > yt[1]:
                 yt.pop(0)
-            ax1.set_yticks([t for t in yt if t < maxPossible] + [maxPossible])
+            ax1.set_yticks(
+                [t for t in yt if t < maxPossible - 0.5 * ytGap] + [maxPossible]
+            )
         ax1.set_ylabel("# of positions", color=yColor)
         ax1.tick_params(axis="y", labelcolor=yColor)
         ax1.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
