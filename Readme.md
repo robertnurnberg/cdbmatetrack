@@ -7,7 +7,7 @@ The files [`matetrack_cdbeval.epd`](matetrack_cdbeval.epd)
 and [`matetrack_cdbpv.epd`](matetrack_cdbpv.epd) are created weekly with
 the help of the scripts `fens2cdb.py` and `cdbbulkpv.py` from [cdblib](https://github.com/robertnurnberg/cdblib), respectively, and the obtained mate statistics are written to [`cdbmatetrack.csv`](cdbmatetrack.csv).
 
-The file [`matetrack.epd`](matetrack.epd) contains 6555 mate problems, ranging from mate in 1 (#1) to #126 for positions with between 4 and 32 pieces. Moreover:
+The file [`matetrack.epd`](matetrack.epd) contains 6554 mate problems, ranging from mate in 1 (#1) to #126 for positions with between 4 and 32 pieces. Moreover:
 * 865 positions have 7 pieces or fewer.
 * Of these 7men positions, 9 are not scored by cdb because they allow castling.
 
