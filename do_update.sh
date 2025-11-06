@@ -7,8 +7,8 @@ if [ -f "$temp_file" ]; then
     exit 0
 fi
 
-python3 ../cdblib/fens2cdb.py -s --user rob matetrack.epd >"$temp_file"
-python3 ../cdblib/cdbbulkpv.py -s --stable --user rob matetrack.epd >matetrack_cdbpv.epd
+python3 ../cdblib/fens2cdb.py -s -c 8 --user rob matetrack.epd >"$temp_file"
+python3 ../cdblib/cdbbulkpv.py -s --stable -c 8 --user rob matetrack.epd >matetrack_cdbpv.epd
 
 mv "$temp_file" matetrack_cdbeval.epd
 
