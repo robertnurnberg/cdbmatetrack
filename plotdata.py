@@ -80,7 +80,7 @@ class matedata:
             rotation_mode="anchor",
             fontsize=6,
         )
-        if plotAll and self.connected[-1]:
+        if plotAll and max(self.connected):
             ax2 = ax1.twinx()
             ax2.set_ylabel("connected to root", color=connectedColor)
             ax2.scatter(self.date, self.connected, color=connectedColor, s=smallDotSize)
